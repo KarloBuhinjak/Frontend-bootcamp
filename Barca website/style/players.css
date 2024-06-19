@@ -88,6 +88,38 @@
   color: #666;
 }
 
+.player-actions {
+  display: flex;
+  gap: 5px;
+  margin-left: auto;
+}
+
+.btn-update,
+.btn-delete {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn-update {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-delete {
+  background-color: #f44336;
+  color: white;
+}
+
+form input,
+form select {
+  margin-bottom: 12px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
 footer {
   height: 60px;
   text-align: center;
