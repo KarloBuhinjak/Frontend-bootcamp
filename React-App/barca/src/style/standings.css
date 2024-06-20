@@ -1,0 +1,43 @@
+.barca-standing {
+  color: #ac1c02;
+}
+
+.standings-title {
+  font-size: 36px;
+  color: black;
+  margin-top: 15px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.standings-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.standings-table {
+  width: 50%;
+  border-collapse: collapse;
+}
+
+.standings-table th,
+.standings-table td {
+  border: 1px solid #014c98;
+  padding: 10px;
+  text-align: center;
+}
+
+.standings-table th {
+  background-color: #014c98;
+  color: white;
+}
+
+.standings-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.standings-table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}

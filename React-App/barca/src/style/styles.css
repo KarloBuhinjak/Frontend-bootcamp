@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: #ac1c02;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+.barca-logo {
+  max-width: 70px;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
+  list-style-type: none;
+}
+li {
+  font-size: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+
+li a::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 0;
+  background: white;
+  transition: all 0.5s;
+}
+
+li a:hover::after {
+  width: 100%;
+}
+
+footer {
+  height: 60px;
+  text-align: center;
+  background-color: #f9d220;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
