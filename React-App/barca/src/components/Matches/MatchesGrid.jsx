@@ -1,6 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const MatchesGrid = ({ matches, deleteMatch }) => {
+  const navigate = useNavigate();
+
+  const handleUpdate = (id) => {
+    navigate(`/update-match/${id}`);
+  };
+
   return (
     <div className="matches-grid">
       {matches.map((match) => (
@@ -13,7 +20,10 @@ const MatchesGrid = ({ matches, deleteMatch }) => {
               Result: {match.resultHome} - {match.resultAway}
             </p>
             <p>Match Type: {match.matchType}</p>
-            <button className="btn-update" onClick={() => {}}>
+            <button
+              className="btn-update"
+              onClick={() => handleUpdate(match.id)}
+            >
               Update
             </button>
             <button

@@ -18,6 +18,8 @@ const PlayersForm = ({ addPlayer }) => {
       position,
     };
 
+    console.log(position);
+
     addPlayer(newPlayer);
 
     setFirstName("");
@@ -68,6 +70,7 @@ const PlayersForm = ({ addPlayer }) => {
           onChange={(e) => setPosition(e.target.value)}
           required
         >
+          <option value="">Select Position</option>
           <option value="FW">Forward</option>
           <option value="MID">Midfielder</option>
           <option value="DF">Defender</option>

@@ -1,6 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const PlayersGrid = ({ players, deletePlayer }) => {
+  const navigate = useNavigate();
+
+  const handleUpdate = (id) => {
+    navigate(`/update-player/${id}`);
+  };
+
   return (
     <div className="players-grid">
       {players.map((player) => (
@@ -16,6 +23,12 @@ const PlayersGrid = ({ players, deletePlayer }) => {
             <p>Position: {player.position}</p>
           </div>
           <div className="player-actions">
+            <button
+              className="btn-update"
+              onClick={() => handleUpdate(player.id)}
+            >
+              Update
+            </button>
             <button
               className="btn-delete"
               onClick={() => deletePlayer(player.id)}
