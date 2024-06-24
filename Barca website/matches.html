@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/matches.css" />
+    <link rel="stylesheet" href="style/styles.css" />
+    <link rel="icon" href="images/barca_logo.png" type="image/x-icon" />
+    <title>FC Barcelona - Matches</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/barca_logo.png" alt="barca-logo" class="barca-logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="players.html">Players</a></li>
+          <li><a href="standings.html">Standings</a></li>
+          <li><a href="matches.html">Matches</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="content">
+      <div class="form-container">
+        <h2>Add Match</h2>
+        <form>
+          <label for="match-type">Match Type:</label>
+          <select id="match-type" name="match-type" required>
+            <option value="home">Home</option>
+            <option value="away">Away</option>
+          </select>
+          <br />
+          <label for="opponent">Opponent:</label>
+          <input type="text" id="opponent" name="opponent" required />
+          <br />
+          <div class="result-input">
+            <label for="result">Result:</label>
+            <input
+              type="number"
+              id="result-home"
+              name="result-home"
+              min="0"
+              required
+            />
+            <span> : </span>
+            <input
+              type="number"
+              id="result-away"
+              name="result-away"
+              min="0"
+              required
+            />
+          </div>
+          <br />
+          <label for="match-date">Date:</label>
+          <input type="date" id="match-date" name="match-date" required />
+          <br />
+          <button type="submit">Add Match</button>
+        </form>
+      </div>
+
+      <div class="matches-list">
+        <h2>Matches List</h2>
+      </div>
+    </div>
+
+    <footer>
+      <p>© Karlo Buhinjak</p>
+    </footer>
+    <script src="scripts/match.js"></script>
+  </body>
+</html>

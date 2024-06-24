@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/update.css" />
+    <link rel="stylesheet" href="style/styles.css" />
+    <link rel="icon" href="images/barca_logo.png" type="image/x-icon" />
+    <title>FC Barcelona - Players</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/barca_logo.png" alt="barca-logo" class="barca-logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="players.html">Players</a></li>
+          <li><a href="standings.html">Standings</a></li>
+          <li><a href="matches.html">Matches</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="content">
+      <div class="form-container">
+        <h2>Update Player</h2>
+        <form id="update-form">
+          <input type="hidden" id="update-id" name="update-id" value="" />
+          <label for="update-first-name">First Name:</label>
+          <input
+            type="text"
+            id="update-first-name"
+            name="update-first-name"
+            required
+          />
+          <br />
+          <label for="update-last-name">Last Name:</label>
+          <input
+            type="text"
+            id="update-last-name"
+            name="update-last-name"
+            required
+          />
+          <br />
+          <label for="update-photo-link">Photo Link:</label>
+          <input
+            type="url"
+            id="update-photo-link"
+            name="update-photo-link"
+            required
+          />
+          <br />
+          <label for="update-position">Position:</label>
+          <select id="update-position" name="update-position" required>
+            <option value="FW">Forward</option>
+            <option value="MID">Midfielder</option>
+            <option value="DF">Defender</option>
+            <option value="GK">Goalkeeper</option>
+          </select>
+          <br />
+          <button type="submit">Update Player</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p>© Karlo Buhinjak</p>
+    </footer>
+    <script src="scripts/updatePlayer.js"></script>
+  </body>
+</html>

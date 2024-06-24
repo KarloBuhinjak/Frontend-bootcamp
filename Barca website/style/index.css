@@ -1,0 +1,88 @@
+.title-content {
+  background-color: #f9d220;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-title {
+  color: white;
+  font-size: 54px;
+  font-weight: bold;
+  margin-top: 0;
+}
+.main-text {
+  color: white;
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+.messi-barca {
+  max-width: 400px;
+  height: auto;
+}
+
+.left-article {
+  width: 30%;
+  margin-right: 60px;
+}
+
+.gallery {
+  display: flex;
+}
+
+.gallery-title {
+  font-size: 36px;
+  color: black;
+  margin-top: 15px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.gallery .photo {
+  border: 4px solid #014c98;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 52px;
+  flex-wrap: wrap;
+}
+.text {
+  text-align: center;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.quote-content {
+  text-align: center;
+  font-size: 50px;
+}
+
+.quote-content {
+  background-color: #f4eac4;
+  margin-top: 50px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  height: 60px;
+  text-align: center;
+  background-color: #f9d220;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

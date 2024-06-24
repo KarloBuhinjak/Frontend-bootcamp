@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/players.css" />
+    <link rel="stylesheet" href="style/styles.css" />
+    <link rel="icon" href="images/barca_logo.png" type="image/x-icon" />
+    <title>FC Barcelona - Players</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/barca_logo.png" alt="barca-logo" class="barca-logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="players.html">Players</a></li>
+          <li><a href="standings.html">Standings</a></li>
+          <li><a href="matches.html">Matches</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="content">
+      <div class="form-container">
+        <h2>Add New Player</h2>
+        <form>
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" required />
+          <br />
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" required />
+          <br />
+          <label for="photo-link">Photo Link:</label>
+          <input type="url" id="photo-link" name="photo-link" required />
+          <br />
+          <label for="position">Position:</label>
+          <select id="position" name="position" required>
+            <option value="FW">Forward</option>
+            <option value="MID">Midfielder</option>
+            <option value="DF">Defender</option>
+            <option value="GK">Goalkeeper</option>
+          </select>
+          <br />
+          <button type="submit">Add Player</button>
+        </form>
+      </div>
+
+      <div class="players-list">
+        <h2>Players List</h2>
+      </div>
+    </div>
+
+    <footer>
+      <p>© Karlo Buhinjak</p>
+    </footer>
+    <script src="scripts/player.js"></script>
+  </body>
+</html>
