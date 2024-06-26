@@ -12,6 +12,10 @@ const CreatePlayer = () => {
   const navigate = useNavigate();
   const { user } = useContext(UserContext);
 
+  {
+    user.roles.includes("User") && navigate("/");
+  }
+
   useEffect(() => {
     const fetchClubs = async () => {
       try {
